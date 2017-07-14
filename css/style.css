@@ -345,7 +345,7 @@ form h4 {
 
 /*FOOTER*/
 
-footer p {
+.footer {
     font-family: sans-serif;
     text-align: center;
     width: 50%;
