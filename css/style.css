@@ -314,6 +314,7 @@ textarea {
     border-radius: 5px;
     font-family: "custom";
     font-size: 18px;
+    margin-bottom: 20px;
 }
 
 fieldset {
