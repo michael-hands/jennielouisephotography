@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Roboto"; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  margin: 0; }
+  html #home, body #home {
+    height: 100%;
+    max-width: 2000px;
+    min-width: 100px;
+    background-image: url("/lib/img/home.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-animation: breath 10s linear infinite;
+    animation: breath 10s linear infinite; }
+
+@-webkit-keyframes breath {
+  0% {
+    background-size: 100% auto; }
+  50% {
+    background-size: 140% auto; }
+  100% {
+    background-size: 100% auto; }
+  h1 {
+    font-family: yellow lemon; } }
+
+@keyframes breath {
+  0% {
+    background-size: 100% auto; }
+  50% {
+    background-size: 140% auto; }
+  100% {
+    background-size: 100% auto; }
+  h1 {
+    font-family: yellow lemon; } }
+    html #home .nav, body #home .nav {
+      width: 100%;
+      height: 50px;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: block; }
+      html #home .nav a, body #home .nav a {
+        float: right;
+        color: #fff;
+        text-decoration: none;
+        padding: 15px 30px 0 0;
+        line-height: 20px;
+        font-family: "Roboto";
+        display: block; }
+    html #home .banner, body #home .banner {
+      width: 100%;
+      height: 50%;
+      display: block;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-top: 100px; }
+      html #home .banner .logo, body #home .banner .logo {
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 50%; }
+        html #home .banner .logo img, body #home .banner .logo img {
+          max-width: 400px;
+          margin: 0 auto; }
+    html #home .arrow-down, body #home .arrow-down {
+      display: block;
+      margin: 50px auto;
+      width: 50px;
+      display: block;
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg); }
+      html #home .arrow-down img, body #home .arrow-down img {
+        width: 20px; }
+  html #welcome, body #welcome {
+    height: auto;
+    width: 100%; }
+    html #welcome h1, body #welcome h1 {
+      margin-top: 100px;
+      text-align: center; }
+    html #welcome p, body #welcome p {
+      margin-top: 50px;
+      text-align: center;
+      width: 60%;
+      margin: 0 auto;
+      padding-bottom: 100px; }
+  html #projects, body #projects {
+    height: 100%;
+    width: 100%; }
+    html #projects .cake-smash, body #projects .cake-smash {
+      height: 50%;
+      width: 100%;
+      display: block; }
+      html #projects .cake-smash .cake-info, body #projects .cake-smash .cake-info {
+        height: 100%;
+        width: 50%;
+        margin: 0;
+        float: left;
+        text-align: center; }
+        html #projects .cake-smash .cake-info p, body #projects .cake-smash .cake-info p {
+          overflow: scroll; }
+      html #projects .cake-smash .cake-img, body #projects .cake-smash .cake-img {
+        height: 100%;
+        width: 50%;
+        background-image: url("/lib/img/cakesmash.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        float: right; }
+    html #projects .pets, body #projects .pets {
+      height: 50%;
+      width: 100%;
+      display: block; }
+      html #projects .pets .pet-info, body #projects .pets .pet-info {
+        height: 100%;
+        width: 50%;
+        margin: 0;
+        float: right;
+        text-align: center; }
+        html #projects .pets .pet-info p, body #projects .pets .pet-info p {
+          overflow: scroll; }
+      html #projects .pets .pet-img, body #projects .pets .pet-img {
+        height: 100%;
+        width: 50%;
+        background-image: url("/lib/img/pets.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        float: left; }
+    @media screen and (max-width: 600px) {
+      html #projects .cake-smash, body #projects .cake-smash {
+        display: block;
+        width: 100%;
+        height: 50%; }
+        html #projects .cake-smash .cake-info .cake-img, body #projects .cake-smash .cake-info .cake-img {
+          width: 100%;
+          display: block;
+          float: none; } }

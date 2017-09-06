@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+
+$font: 'Roboto'
+
+h1, h2, h3, h4, h5, h6, p
+    font-family: $font
+
+html, body
+    height: 100%
+    width: 100%
+    background-color: #fff
+    margin: 0
+    
+    
+    #home
+        height: 100%
+        max-width: 2000px
+        min-width: 100px
+        background-image: url("/lib/img/home.jpg")
+        background-repeat: no-repeat
+        background-attachment: fixed
+        background-size: cover
+        animation: breath 10s linear infinite 
+        
+        
+        @keyframes breath 
+            0% 
+                background-size: 100% auto
+            50%
+                background-size: 140% auto
+            100% 
+                background-size: 100% auto
+            
+            h1
+                font-family: yellow lemon
+        
+        .nav
+            width: 100%
+            height: 50px
+            background-color: rgba(0,0,0,0.5)
+            display: block
+            
+            a
+                float: right
+                color: #fff
+                text-decoration: none
+                padding: 15px 30px 0 0
+                line-height: 20px
+                font-family: $font
+                display: block
+    
+        
+        .banner
+            width: 100%
+            height: 50%
+            display: block
+            align-items: center
+            margin-top: 100px
+            
+            .logo
+                margin: 0 auto
+                display: flex
+                align-items: center
+                background-color: rgba(0,0,0,0.5)
+                width: 100%
+                height: 50%
+                
+        
+                img
+                    max-width: 400px
+                    margin: 0 auto
+                    
+        .arrow-down
+            display: block
+            margin: 50px auto
+            width: 50px
+            display: block
+            transform: rotate(90deg)
+            
+            img
+                width: 20px
+                
+    #welcome
+        height: auto
+        width: 100%
+        
+        h1
+            margin-top: 100px
+            text-align: center
+            
+        p
+            margin-top: 50px
+            text-align: center
+            width: 60%
+            margin: 0 auto
+            padding-bottom: 100px
+            
+    #projects
+        height: 100%
+        width: 100%
+            
+        .cake-smash
+            height: 50%
+            width: 100%
+            display: block
+        
+            .cake-info
+                height: 100%
+                width: 50%
+                margin: 0
+                float: left
+                text-align: center
+                
+                h1
+                    
+                
+                p
+                    overflow: scroll
+
+            .cake-img
+                height: 100%
+                width: 50%
+                background-image: url("/lib/img/cakesmash.jpg")
+                background-position: center center
+                background-repeat: no-repeat
+                background-size: cover
+                margin: 0
+                float: right
+            
+        .pets
+            height: 50%
+            width: 100%
+            display: block
+        
+            .pet-info
+                height: 100%
+                width: 50%
+                margin: 0
+                float: right
+                text-align: center
+                
+                h1
+                    
+                
+                p
+                    overflow: scroll
+
+            .pet-img
+                height: 100%
+                width: 50%
+                background-image: url("/lib/img/pets.jpg")
+                background-position: center center
+                background-repeat: no-repeat
+                background-size: cover
+                margin: 0
+                float: left
+                
+        @media screen and (max-width: 600px)
+            .cake-smash
+                display: block
+                width: 100%
+                height: 50%
+
+                .cake-info .cake-img
+                    width: 100%
+                    display: block
+                    float: none
+            
+        
+            
